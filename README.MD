@@ -43,3 +43,7 @@ g++ -Isrc src/main.cpp src/controller/NBAController.cpp src/view/TeamView.cpp sr
 ## Contributing
 
 Contributions are welcome! If you find any bugs or have suggestions for improvements, feel free to open an issue or create a pull request.
+
+
+## UML Diagram
+![TeamView Class Diagram](https://www.planttext.com/api/plantuml/png/lLMxSi8m4Epr5IhDO7x0HOQyYZGK34cliG_mZ2mvrfc4oIJV7bcHP4i29XG9dNTFshtp7bugP1ts3IUav4mfkhgxtG1hw0UX-hUWg1zMh862AkngiRDmASKMEX1bJA14njTm0D5hgXPeSNXlGIXGKqm0FebIDhRGe7Fd88kLynEYUQgNXr9vf3ApAZl0ZHN8Pa4FXhltKgVOpKHqu5rBXdoqyWcnSaP2HasSn3thmeEigx5ouYkTHb8T-4mcbPHxvy44axAnZsYqGM5LgvQpO-RGJvUmeTcN6jvinEOUoDox-KgGLhTdflG0o6gk_YeSiLUTHJrnx2JdqFcTQ6G5l711jU11-oryBvCmZnTauS4yEkFR3myvU0jOxlzl1jU6yz92NHVSo-jtPQmlRkilCtzsgN-z3EUtlsyhXl0JzZ5zxbzuiRY9CgZJ8x7U7ccvPs87YeJqSC0lM46VpUqcPyJ3zb8ZKD0rlFQWaEf2HiWIH3Ly3Ru1)

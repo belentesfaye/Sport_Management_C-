@@ -1,19 +1,54 @@
 @startuml
 
-object Model {
-    // Attributes and methods of the model
+class NBATeam {
+    - teamName: string
+    - conference: string
+    - totalRevenue: int
+    - expenses: int
+    - netIncome: int
+
+    + NBATeam(teamName: string, conference: string, totalRevenue: int, expenses: int, netIncome: int)
+    + getTeamName(): string
+    + getConference(): string
+    + getTotalRevenue(): int
+    + getExpenses(): int
+    + getNetIncome(): int
+    + setTeamName(teamName: string): void
+    + setConference(conference: string): void
+    + setTotalRevenue(totalRevenue: int): void
+    + setExpenses(expenses: int): void
+    + setNetIncome(netIncome: int): void
+    + display(): void
 }
 
-object View {
-    // Attributes and methods of the view
+class TeamView {
+    + TeamView()
+    + ~TeamView()
+    + printTeamDetails(teamName: string, conference: string, totalRevenue: int, expenses: int, netIncome: int): void
 }
 
-object Controller {
-    // Attributes and methods of the controller
+class NBAController {
+    - model: NBATeam
+    - view: TeamView
+
+    + NBAController(model: NBATeam, view: TeamView)
+    + ~NBAController()
+    + fetchTeamDetails(teamName: string, conference: string, totalRevenue: int, expenses: int, netIncome: int): void
+    + setTeamName(teamName: string): void
+    + getTeamName(): string
+    + setConference(conference: string): void
+    + getConference(): string
+    + setTotalRevenue(totalRevenue: int): void
+    + getTotalRevenue(): int
+    + setExpenses(expenses: int): void
+    + getExpenses(): int
+    + setNetIncome(netIncome: int): void
+    + getNetIncome(): int
+    + updateView(): void
 }
 
-Model --> Controller : Notify changes
-Controller --> View : Update view
-View --> Model : Request data
+NBATeam --> NBAController : Notify changes
+NBAController --> TeamView : Update view
+TeamView --> NBATeam : Request data
 
 @enduml
