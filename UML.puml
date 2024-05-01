@@ -1,0 +1,19 @@
+@startuml
+
+object Model {
+    // Attributes and methods of the model
+}
+
+object View {
+    // Attributes and methods of the view
+}
+
+object Controller {
+    // Attributes and methods of the controller
+}
+
+Model --> Controller : Notify changes
+Controller --> View : Update view
+View --> Model : Request data
+
+@enduml

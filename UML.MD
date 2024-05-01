@@ -1,3 +1,0 @@
-@startuml
-
-object model
