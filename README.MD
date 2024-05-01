@@ -1,7 +1,3 @@
-Got it. Here's an example README tailored to your C++ Sport Management project:
-
----
-
 # Sport Management - C++ MVC
 
 This is a simple Model-View-Controller (MVC) application for managing sports teams, specifically focusing on NBA teams. It allows users to perform basic CRUD (Create, Read, Update, Delete) operations on NBA team data.
