@@ -13,8 +13,9 @@ namespace mvc {
         TeamView view;
 
     public:
-        NBAController(const NBATeam& model);
+        NBAController(const NBATeam& model, const TeamView& view);
         virtual ~NBAController();
+
 
         void fetchTeamDetails(std::string teamName, std::string conference, int totalRevenue, int expenses, int netIncome);
 
@@ -32,6 +33,9 @@ namespace mvc {
 
         void setNetIncome(int netIncome);
         int getNetIncome();
+
+        void updateView();
+
     };
 } /* namespace mvc */
 

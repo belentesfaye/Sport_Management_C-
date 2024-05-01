@@ -70,4 +70,8 @@ namespace mvc {
     int NBAController::getNetIncome(){
         return model.getNetIncome();
     }
+
+    void NBAController::updateView(){
+        view.printTeamDetails(model.getTeamName(), model.getConference(), model.getTotalRevenue(), model.getExpenses(), model.getNetIncome());
+    }
 }
